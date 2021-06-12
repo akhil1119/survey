@@ -1,0 +1,67 @@
+<html>
+    <link rel="stylesheet" href="food_survey.css">
+
+    <body>
+    
+        <div id="container">
+          <div id="header">
+            <h1 id="title">Foood survey</h1>
+            <p id="description">Thank you for time! </p>
+          </div>
+    
+          <form id="survey-form">
+    
+            <div class="question-box">
+              <label id="name-label">Name: </label><input id="name" type="text" placeholder="Enter your name" class="form-element" required>
+            </div>
+    
+            <div class="question-box">
+              <label id="email-label">E-mail: </label><input id="email" type="email" placeholder="Enter your e-mail" class="form-element" required>
+            </div>
+    
+            <div class="question-box">
+              <label id="number-label">Age: </label><input id="number" type="number" min="5" max="99" placeholder="Age" class="form-element" required>
+            </div>
+    
+    
+            <div class="question-box">
+              <p class="question">How often do you consume fast food on a weekly basis?</p>
+              <select id="dropdown" class="form-element">
+                <option>1-2 times</option>
+                <option>3-4 times</option>
+                <option>5-6 times</option>
+                <option> 7 or more</option>
+              </select>
+            </div>
+    
+            <div class="question-box">
+              <p class="question">Which amoung the following best describes you?</p>
+              <label><input name="serve-preference" value="student" type="radio" class="radio-input">Student</label><br>
+              <label><input name="serve-preference" value="employed" type="radio" class="radio-input">employe</label><br>
+              <label><input name="serve-preference" value="unemployed" type="radio" class="radio-input">unemploye</label><br>
+              <label><input name="serve-preference" value="traveller" type="radio" class="radio-input" checked>traveller</label>
+            </div>
+    
+            <div class="question-box">
+              <p class="question">Select all your favorites spots you visit frequently</p>
+              <label><input name="toppings" value="Pizza Hut" type="checkbox" class="checkbox-input">Pizza Hut</label><br>
+              <label><input name="toppings" value="McDonal's" type="checkbox" class="checkbox-input">McDonal's</label><br>
+              <label><input name="toppings" value="Restarunt" type="checkbox" class="checkbox-input">Restarunt</label><br>
+              <label><input name="toppings" value="Street food" type="checkbox" class="checkbox-input">Street food</label><br>
+             
+            </div>
+    
+            <div class="question-box">
+              <p class="question">Comments your favorite dishes</p>
+              <textarea id="comments" name="comment" placeholder="Enter your comment " class="form-element"></textarea>
+            </div>
+    
+            <button id="submit" type="submit">Submit</button>
+    
+          </form>
+        </div>
+        
+      </body>
+      
+      
+</html>
